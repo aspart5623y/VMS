@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 14px;
+    outline: none !important;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f4f5f7 !important;
+}
+.btn {
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+.form-control, .custom-select{
+    height: 40px;
+    box-shadow: none !important;
+}
+.form-control:focus, .custom-select:focus{
+    border-color: lightgrey;
+}
+.bg-dark{
+    background-color: rgb(34, 32, 32) !important;
+}
+.bg-blue{
+    background-color: #423e92 !important;
+}
+.text-blue{
+    color: #423e92 !important;
+}
+.btn-blue{
+    color: white !important;
+    background-color: #423e92 !important;
+    border-color: #423e92 !important;
+    transition: .2s all ease-in-out;
+}
+.btn-blue:hover{
+    background-color: #2c2972 !important;
+}
+
+.bg-orange{
+    background-color: #f69657 !important;
+    border-color: #f69657 !important;
+}
+.text-orange{
+    color: #f69657 !important;
+}
+.btn-orange{
+    color: white !important;
+    background-color: #f69657 !important;
+    transition: .2s all ease-in-out;
+}
+.btn-orange:hover{
+    background-color: #d8854e !important;
+}
+
+/* ========================  P R E L O A D E R  ======================= */
+#preloader {
+    position: fixed;
+    top: 0px !important;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    z-index: 99999;
+}
+
+#preloader.loaded {
+    opacity: 1;
+    z-index: 99999;
+    animation-name: fadeout;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+/* ========================  A M I N A T I O N  ======================= */
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+        z-index: 99999;
+    }
+    100% {
+        opacity: 0;
+        z-index: -9999;
+    }
+}
+
+
+
+
+/* 
+    |********************************|
+    |       S  I  D  E  B  A  R      |
+    |********************************| 
+*/
+.sidebar{
+    position: fixed;
+    top: 0px !important;
+    height: 100vh;
+    width: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 9999;
+    transition: .2s all ease-in-out;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar .sidebar-brand{
+    display: block;
+    padding: 20px 15px 120px 15px;
+}
+.sidebar-name{
+    color: white;
+    font-size: 25px;
+    bottom: -5px !important;
+}
+
+.sidebar-collapse{
+    top: -35px;
+    width: 280px;
+    background-color: white;
+    transform: rotate(10deg);
+    left: -45px;
+}
+.sidebar-nav{
+    transform: rotate(-10deg);
+    padding-top: 30px;
+    padding-left: 55px;
+}
+.sidebar-link{
+    display: block;
+    padding: 20px;
+    color: #423e92;
+    transition: .2s all ease-in-out;
+}
+.sidebar-link:hover{
+    color: #d8854e;
+}
+.sidebar-link.active{
+    color: #d8854e;
+}
+.sidebar-link .arrow{
+    transform: rotate(-90deg);
+    transition: .2s all ease-in-out;
+}
+.sidebar-link .arrow{
+    transform: rotate(-90deg);
+    transition: .2s all ease-in-out;
+}
+.sidebar-link[aria-expanded = "true"] .arrow{
+    transform: rotate(0deg);
+}
+.sidebar-link:focus, .sidebar-link[aria-expanded = "true"]{
+    color:  #d8854e !important;
+}
+
+
+
+
+/* 
+    |***********************************|
+    |       M  A  I  N  B  O  D  Y      |
+    |***********************************|
+*/
+.mainbody{
+    padding-left: 250px !important;
+}
+nav{
+    background-color: white !important;
+    z-index: 1;
+    transition: .2s all ease-in-out;
+}
+nav.unscrolled{
+    background-color: transparent !important;
+}
+nav.scrolled{
+    background-color: white !important;
+}
+
+nav .navbar-toggler{
+    width: 45px;
+    height: 45px;
+}
+
+nav .navbar-toggler-bar{
+    /* width: 100%; */
+    height: 2px;
+    display: block;
+    margin: 7px;
+}
+
+
+.masthead{
+    background-image: url('../assets/logo/customLogo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 130px 0;
+
+}
+.masthead .masthead-overlay{
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.masthead .masthead-content{
+    z-index: 1;
+}
+
+.status{
+    padding: 100px 0 0px 0 !important;
+}
+
+
+.form-2{
+    padding: 150px 0 80px 0 !important;
+}
+
+
+.form .card-body{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicles{
+    padding: 130px 0 160px 0 !important;
+}
+
+.table-responsive table th, .table-responsive table td{
+    white-space: nowrap;
+}
+
+.table-responsive table td .btn{
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .sidebar{
+        width: 250px;
+        left: -250px;
+        border-radius: 0px 30px 30px 0px;
+    }
+    .mainbody{
+        padding-left: 0px !important;
+    }
+    nav{
+        background-color: #423e92 !important;
+    }
+    nav.scrolled{
+        background-color: #423e92 !important;
+    }
+    .masthead{
+        padding: 120px 0;
+    }
+    
+    .sidebar-overlay{
+        position: absolute;
+        z-index: -9000;
+        height: 100vh;
+        width: 100vw;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: .2s ease-in-out;
+        opacity: 0;
+    }
+    main.open .sidebar {
+        left: 0px;
+    }
+    main.open .sidebar-overlay {
+        opacity: 1;
+        z-index: 9000;
+        position: fixed;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .masthead .masthead-content img{
+        width: 35px;
+    }
+}

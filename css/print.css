@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0% !important;
+    padding: 0% !important;
+    font-size: 40px;
+    outline: none !important;
+    position: relative;
+}
+.sidebar .sidebar-brand{
+    display: block;
+    padding: 20px 15px 120px 15px;
+}
+.sidebar-name{
+    color: white;
+    font-size: 45px;
+    bottom: -5px !important;
+}
+.card{
+    box-shadow: none !important;
+}
+.noprint{
+    display: none;  
+}
