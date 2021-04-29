@@ -4,7 +4,6 @@
     include './php/config/db_connect.php';
     ob_start();
 
-
 ?>
 
 

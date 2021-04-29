@@ -63,10 +63,10 @@
                         <p class="mb-1">Vehicle fleet number: <?php echo $_SESSION['fleet_number'] ?></p>
                         <p class="mb-1">From <?php echo $_SESSION['started'] ?> to <?php echo $_SESSION['ended'] ?></p>
                         
-        
+                        
                         <p class="mb-1">Number or trips: <?php echo $_SESSION['trip'] ?></p>
                         <p class="mb-1">Date: <?php echo date("D d M, Y"); ?></p>
-                        <p class="mb-1">Time: <?php echo date("h:ia"); ?></p>
+                        <p class="mb-1">Time: <?php date_default_timezone_set("Africa/Lagos"); echo date("h:ia"); ?></p>
                         <p class="mb-1">New status: <?php echo $_SESSION['status']; ?>%</p>
 
                         <!-- QR Code -->
